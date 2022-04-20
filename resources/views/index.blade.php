@@ -89,7 +89,7 @@
             <a href="locale/en" class="dropdown-item text-white">English</a>
             <a href="locale/cn" class="dropdown-item text-white">Chinese</a>
             <a href="locale/de" class="dropdown-item text-white">German</a>
-            <a href="locale/fr" class="dropdown-item text-white">Francais</a>
+            <a href="locale/in" class="dropdown-item text-white">Indonesia</a>
         </li>
       </ul>
     </div>
