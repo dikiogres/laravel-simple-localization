@@ -1,9 +1,9 @@
 <?php
     return[
-        'localization' => 'Localization',
-        'gallery' => 'Gallery',
-        'contact' => 'Contact',
-        'about' => 'About',
-        'service' => 'Service',
+        'localization' => 'Localization en',
+        'gallery' => 'Gallery en',
+        'contact' => 'Contact en',
+        'about' => 'About en',
+        'service' => 'Service en',
     ];
 ?>

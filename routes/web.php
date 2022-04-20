@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get("locale/{lange}", [LocalizationController::class,'setLang']);
+Route::get('locale/{lang}', [App\Http\Controllers\LocalizationController::class,'setLang']);
 
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 Auth::routes();
@@ -27,6 +27,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

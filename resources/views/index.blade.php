@@ -59,31 +59,39 @@
     
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Localization</a>
+    <a class="navbar-brand" href="#">
+        @lang('public.localization')
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+          <a class="nav-link active" aria-current="page" href="#">@lang('public.gallery')</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#">@lang('public.contact')</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">About</a>
+          <a class="nav-link">@lang('public.about')</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Service</a>
+          <a class="nav-link">@lang('public.service')</a>
         </li>
       </ul>
-      <select class="selectpicker" data-width="fit">
-        <option data-content='<span class="flag-icon flag-icon-us"></span> English' href="locale/en">English</option>
-        <option  data-content='<span class="flag-icon flag-icon-mx"></span> Chinese' href="locale/cn">Chinese</option>
-        <option  data-content='<span class="flag-icon flag-icon-mx"></span> German' href="locale/de">German</option>
-        <option  data-content='<span class="flag-icon flag-icon-mx"></span> Francais' href="locale/fr">Francais</option>
-    </select>
+      <ul class="navbar-nav ml-auto flex-nowrap">
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle text-danger" id="navbarDropdown" role="button" data-toggle="dropdown">
+                Language
+            </a>
+            <div class="dropdown-menu"></div>
+            <a href="locale/en" class="dropdown-item text-white">English</a>
+            <a href="locale/cn" class="dropdown-item text-white">Chinese</a>
+            <a href="locale/de" class="dropdown-item text-white">German</a>
+            <a href="locale/fr" class="dropdown-item text-white">Francais</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
