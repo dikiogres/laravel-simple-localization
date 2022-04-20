@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get("locale/{lange}", [LocalizationController::class,'setLang']);
+
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 Auth::routes();
 
