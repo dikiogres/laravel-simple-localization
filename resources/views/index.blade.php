@@ -98,8 +98,8 @@
 
 <main class="container">
   <div class="bg-light p-5 rounded">
-    <h1>Localization example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <h1>@lang('public.title')</h1>
+    <p class="lead">@lang('public.paragraph')</p>
   </div>
 </main>
 
